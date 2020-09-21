@@ -6,7 +6,7 @@ yii2-img
 Использование
 ------------------
 
-В контроллер (для каждой модели hashKlass уникальный): 
+В контроллер 
 
 ```php
 
@@ -21,16 +21,17 @@ public function actions()
 }
 
 ```
-
+Добавить поле status в таблицу БД.
 В gridview:
 
 ```php
 
 'columns' => [
     \common\components\status\StatusColumn::switch('status', [1]),
-    \common\components\status\StatusColumn::switch('visible', [1]),
+    //\common\components\status\StatusColumn::switch('visible', [1]),
 ],
 
 ```
 
-status и visible - поля таблицы, которые принимают [1, 2]
+status и visible - поля таблицы int
+Второй параметр массив id - которые нельзя переключать
