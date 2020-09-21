@@ -27,8 +27,8 @@ public function actions()
 ```php
 
 'columns' => [
-    \common\components\statusCheckbox\StatusColumn::switch('status', [1]),
-    //\common\components\statusCheckbox\StatusColumn::switch('visible', [1]),
+    \common\components\statusCheckbox\Status::column('switch', 'status', [1,2]),
+    //\common\components\statusCheckbox\Status::column('checkbox', 'status', [1,2]),
 ],
 
 ```
