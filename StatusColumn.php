@@ -1,6 +1,6 @@
 <?php
 
-namespace common\components\status;
+namespace common\components\statusCheckbox;
 use Yii;
 use yii\base\Widget;
 use yii\web\View;
@@ -15,7 +15,7 @@ class StatusColumn
         StatusAsset::register(Yii::$app->view);
         
         return [
-            'class' => 'common\components\status\models\SwitchCheckboxColumn',
+            'class' => 'common\components\statusCheckbox\models\SwitchCheckboxColumn',
             'header' => 'Статус',
             'checkboxOptions' => function ($model, $key, $index, $column) use ($fieldName, $array_idsDisabled) {
 

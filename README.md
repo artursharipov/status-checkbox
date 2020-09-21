@@ -14,7 +14,7 @@ public function actions()
 {
     return [
         'change-column' => [
-            'class' => 'common\components\status\actions\ChangeStatusAction',
+            'class' => 'common\components\statusCheckbox\actions\ChangeStatusAction',
             'self' => 'common\modules\page\models\Page'
         ],
     ];
@@ -27,8 +27,8 @@ public function actions()
 ```php
 
 'columns' => [
-    \common\components\status\StatusColumn::switch('status', [1]),
-    //\common\components\status\StatusColumn::switch('visible', [1]),
+    \common\components\statusCheckbox\StatusColumn::switch('status', [1]),
+    //\common\components\statusCheckbox\StatusColumn::switch('visible', [1]),
 ],
 
 ```

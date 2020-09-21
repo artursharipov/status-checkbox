@@ -1,6 +1,6 @@
 <?php
-namespace common\components\status\actions;
-namespace common\components\status\actions;
+namespace common\components\statusCheckbox\actions;
+namespace common\components\statusCheckbox\actions;
 use yii\base\Action;
 
 use Yii;

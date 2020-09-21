@@ -1,6 +1,6 @@
 <?php
 
-namespace common\components\status\models;
+namespace common\components\statusCheckbox\models;
 
 class SwitchCheckboxColumn extends \yii\grid\CheckboxColumn
 {
