@@ -1,4 +1,4 @@
-yii2-img
+yii2-status-checkbox
 =================
 
 Статус ввиде чекбоксов в gridview yii2 
