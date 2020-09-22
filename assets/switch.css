@@ -43,7 +43,6 @@
      -webkit-transition: background 0.3s ease;
      transition: background 0.3s ease;
      vertical-align: middle;
-     margin: 0 16px;
    }
    
    .switch label .lever:before, .switch label .lever:after {

@@ -15,10 +15,14 @@ class ChangeStatusAction extends Action
 
         $fieldName = Yii::$app->request->get('fieldName');
 
-        $model = $this->self::findOne($id);
+        if(Yii::$app->request->isAjax){
 
-        $model->{$fieldName} == 1 ? $model->{$fieldName} = 0 : $model->{$fieldName} = 1;
+            $model = $this->self::findOne($id);
 
-        $model->save();
+            $model->{$fieldName} == 1 ? $model->{$fieldName} = 0 : $model->{$fieldName} = 1;
+
+            $model->save();
+
+        }
     }
 }

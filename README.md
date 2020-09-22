@@ -32,6 +32,13 @@ public function actions()
 ],
 
 ```
+В form.php
+
+```php
+
+$form->field($model, 'status', \common\components\statusCheckbox\Status::statusTemplate('Статус'))->checkBox(['label' => false])
+
+```
 
 status и visible - поля таблицы int
 Второй параметр массив id - которые нельзя переключать

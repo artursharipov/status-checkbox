@@ -65,6 +65,21 @@ class Status
 
         ];
     }
+
+    public static function statusTemplate($title = 'Статус')
+    {
+        StatusAsset::register(Yii::$app->view);
+
+        return [
+            'template' => 
+                "<div class='switch'>
+                    <label>{$title} 
+                        {input}
+                        <span class='lever'></span>
+                    </label>
+                </div>\n{error}"
+        ];
+    }
     
 }
 
